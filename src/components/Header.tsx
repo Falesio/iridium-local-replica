@@ -24,7 +24,8 @@ const Header = () => {
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
             <span className="text-2xl font-black text-primary">DORKY</span>
-            <span className="text-sm font-medium text-white/80 hidden sm:block">ELECTRICIAN</span>
+            <span className="text-sm font-medium text-white/80 hidden sm:block">
+          </span>
           </a>
 
           {/* Desktop Nav */}

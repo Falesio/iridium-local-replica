@@ -25,8 +25,8 @@ const ContactForm = () => {
       [e.target.name]: e.target.value
     });
   };
-  return <div className="rounded-2xl p-6 md:p-8 shadow-2xl bg-foreground">
-      <h3 className="text-xl font-bold text-card-foreground mb-6">Get a Free Quote</h3>
+  return <div className="rounded-2xl p-6 md:p-8 shadow-2xl bg-[#14181f]/[0.78]">
+      <h3 className="text-xl font-bold mb-6 text-primary">Get a Free Quote</h3>
       
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>

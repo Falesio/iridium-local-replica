@@ -21,8 +21,7 @@ const Hero = () => {
             
             <h1 className="text-4xl md:text-5xl font-black text-white leading-tight mb-6 lg:text-5xl">Trusted Local Electrician — Traralgon & Gippsland</h1>
             
-            <p className="text-xl text-white/80 mb-8">Fully qualified residential & commercial electricians delivering rapid service and peace of mind.
-          </p>
+            <p className="text-xl text-white/80 mb-8">Professional electrical services for homes and businesses, delivered with punctuality, skill, and a commitment to safety.</p>
 
             {/* Features */}
             <ul className="space-y-3 mb-8">
