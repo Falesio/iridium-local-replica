@@ -1,21 +1,13 @@
 import { CheckCircle, Star } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import ContactForm from "./ContactForm";
-
 const Hero = () => {
-  const features = [
-    "Available 24/7 across Gippsland",
-    "Free Electrical Safety Check with Every Job",
-    "No surprise costs — clear job quotes upfront",
-  ];
-
-  return (
-    <section className="hero-section pt-20">
+  const features = ["Available 24/7 across Gippsland", "Free Electrical Safety Check with Every Job", "No surprise costs — clear job quotes upfront"];
+  return <section className="hero-section pt-20">
       {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBg})` }}
-      />
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: `url(${heroBg})`
+    }} />
       
       {/* Overlay */}
       <div className="hero-overlay" />
@@ -25,24 +17,19 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Content */}
           <div className="animate-slide-up">
-            <p className="text-primary font-semibold text-lg mb-4">Dorky Electricians</p>
+            <p className="text-primary font-semibold text-lg mb-4">Dorky Electrician</p>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
-              Fast, Reliable Electricians — Gippsland Wide
-            </h1>
+            <h1 className="text-4xl md:text-5xl font-black text-white leading-tight mb-6 lg:text-5xl">Trusted Local Electrician — Traralgon & Gippsland</h1>
             
-            <p className="text-xl text-white/80 mb-8">
-              Fully qualified residential & commercial electricians delivering rapid service and peace of mind.
-            </p>
+            <p className="text-xl text-white/80 mb-8">Fully qualified residential & commercial electricians delivering rapid service and peace of mind.
+          </p>
 
             {/* Features */}
             <ul className="space-y-3 mb-8">
-              {features.map((feature, index) => (
-                <li key={index} className="flex items-center gap-3 text-white/90">
+              {features.map((feature, index) => <li key={index} className="flex items-center gap-3 text-white/90">
                   <CheckCircle className="check-icon" />
                   <span>{feature}</span>
-                </li>
-              ))}
+                </li>)}
             </ul>
 
             {/* Google Reviews Badge */}
@@ -54,9 +41,7 @@ const Hero = () => {
               </div>
               <div>
                 <div className="flex items-center gap-1">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                  ))}
+                  {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />)}
                 </div>
                 <p className="text-white/80 text-sm">5.0 rating · 242 reviews</p>
               </div>
@@ -69,8 +54,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
